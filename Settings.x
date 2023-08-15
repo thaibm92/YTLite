@@ -277,7 +277,7 @@ static YTSettingsSectionItem *createSwitchItem(NSString *title, NSString *titleD
         }];
         [sectionItems addObject:other];
 
-        [sectionItems addObject:space];
+      //  [sectionItems addObject:space];
 
         YTSettingsSectionItem *startup = [YTSettingsSectionItemClass itemWithTitle:LOC(@"Startup")
         accessibilityIdentifier:nil
@@ -352,7 +352,7 @@ static YTSettingsSectionItem *createSwitchItem(NSString *title, NSString *titleD
         [sectionItems addObject:startup];
     }
     
-    [sectionItems addObject:space];
+  //  [sectionItems addObject:space];
 
     YTSettingsSectionItem *ps = [%c(YTSettingsSectionItem) itemWithTitle:@"PoomSmart" titleDescription:@"YouTube-X, YTNoPremium, YTClassicVideoQuality, YTShortsProgress, YTReExplore, SkipContentWarning, YTAutoFullscreen, YouTubeHeaders" accessibilityIdentifier:nil detailTextBlock:nil selectBlock:^BOOL (YTSettingsCell *cell, NSUInteger arg1) {
         return [%c(YTUIUtils) openURL:[NSURL URLWithString:@"https://github.com/PoomSmart/"]];
@@ -416,7 +416,7 @@ static YTSettingsSectionItem *createSwitchItem(NSString *title, NSString *titleD
     }];
     [sectionItems addObject:version];
 
-    [settingsViewController setSectionItems:sectionItems forCategory:YTLiteSection title:@"YTLite" titleDescription:nil headerHidden:NO];
+    [settingsViewController setSectionItems:sectionItems forCategory:YTLiteSection title:@"Premium Plus" titleDescription:nil headerHidden:NO];
 }
 
 - (void)updateSectionForCategory:(NSUInteger)category withEntry:(id)entry {
@@ -443,8 +443,8 @@ static YTSettingsSectionItem *createSwitchItem(NSString *title, NSString *titleD
         }
         actionTitle:LOC(@"Yes")
         cancelTitle:LOC(@"No")];
-        alertView.title = @"YTLite";
-        alertView.subtitle = [NSString stringWithFormat:LOC(@"AdvancedModeReminder"), @"YTLite", LOC(@"Version"), LOC(@"Advanced")];
+        alertView.title = @"IOSMOD.NET";
+        alertView.subtitle = [NSString stringWithFormat:LOC(@"AdvancedModeReminder"), @"Premium Plus", LOC(@"Version"), LOC(@"Advanced")];
         [alertView show];
         });
     }
