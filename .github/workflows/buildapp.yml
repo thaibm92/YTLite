@@ -133,6 +133,7 @@ jobs:
           cd ${{ github.workspace }}/main
           git clone https://github.com/CokePokes/YoutubeExtensions.git YoutubeExtensions
           git clone https://github.com/thaibm92/YouTubeHeader.git YouTubeHeader
+          git clone https://github.com/roothide/libroothide.git roothide
 
       - name: Build Tweak YouTubePremium
         id: build_package
