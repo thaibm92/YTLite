@@ -135,6 +135,7 @@ jobs:
           git clone https://github.com/thaibm92/YouTubeHeader.git YouTubeHeader
           git clone https://github.com/roothide/libroothide.git roothide
           git clone https://github.com/roothide/libroothide.git protobuf
+          rm -f protobuf/module.modulemap
 
       - name: Build Tweak YouTubePremium
         id: build_package
